@@ -71,7 +71,7 @@ body {
   padding: 10px 20px;
   margin: 8px 10px;
   border: none;
-  border-radius: 4;
+  border-radius: 4px;
   cursor: pointer;
   letter-spacing: 1;
   font-family: 'Calibri';

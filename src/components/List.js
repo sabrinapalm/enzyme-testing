@@ -25,25 +25,26 @@ export default class List extends React.Component {
   }
 
   handleAddAnimal = () => {
-    const animal = this.state;
+    const { animal, myAnimalsList } = this.state;
     if (animal) {
       this.setState({
-        myAnimalsList: [...this.state.myAnimalsList, this.state.animal]
+        myAnimalsList: [...myAnimalsList, animal]
       })
+    } else {
+      console.log('empty');
     }
   }
 
   handleRemoveAnimal=(remove)=>{
     let myAnimalsList = [...this.state.myAnimalsList]
     myAnimalsList = myAnimalsList.filter((item, i) => i !== remove)
-    console.log(myAnimalsList);
     this.setState({ myAnimalsList })
   }
 
   render(){
     const allAnimals = this.state.myAnimalsList.map((item, i) =>
     (<li key={i}>
-      <span>{item.toUpperCase()}</span>
+      <span>{item}</span>
         <button
           className="removebutton"
           onClick={() => this.handleRemoveAnimal(i)}
