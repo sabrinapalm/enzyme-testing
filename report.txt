@@ -1,0 +1,22 @@
+Jag har valt att granska Alejandro och Annas kod.
+
+Har ni testat samma saker?
+Vi har i princip testat samma saker men testat på lite olika sätt.
+Exempelvis har jag använt mig mer av att sätta värden i variabler som jag inte
+gjorde i Lab34. Medans dem i vissa fall har skrivit in värden direkt i testet.
+Min counter fungerar även på det sättet att den adderas numret på det numret som redan finns,
+medans deras counter gör en replace på det numret som finns. Därför är det testet även något annorlunda.
+Dem har även använt sig av simulate keypress som jag inte gjort,
+det jag använt mig av har varit change och click simulatues.
+
+Vilka är de viktigaste testfallen? Varför är de viktiga?
+Kan tyckas onödigt att testa ifall en komponent renderas korrekt, det ser man i sin applikation.
+Men jag tycker ändå det är viktigast att testa att komponenten och dess innehåll renderar korrekt.
+Det jag tycker är absolut viktigast är nog att testa så att simulationer fungerar korrekt.
+Att värden som ska förändras, läggas till eller tas bort faktiskt gör det.
+
+
+Finns det några onödiga testfall i deras kod? Varför är de onödiga?
+I denna laboration kan jag tycka att värden som null, undefined, Infinity och liknande inte behöver testat.
+Jag kan säkert ha fel i detta, jag har själv inte testat. Men som användare av en applikation hade jag förmodligen
+inte försökt att lägga in dessa värden om man inte är en riktigt Hackerman så att säga.
