@@ -25,7 +25,7 @@ import List from '../components/List.js';
 
 
 
-describe('list renders without crashing', () => {
+describe('List renders without crashing', () => {
 
   it('should render component without crashing', () => {
     const wrapper = shallow(<List />);
@@ -55,7 +55,7 @@ describe('list renders without crashing', () => {
 
   it('should test initialstate of my animalslist', ()=>{
     const wrapper =  shallow(<List />);
-    let array = wrapper.state('myAnimalsList');
+    wrapper.state('myAnimalsList');
     expect(wrapper.state('myAnimalsList')).toEqual([]);
   })
 
@@ -87,7 +87,7 @@ describe('list renders without crashing', () => {
     expect(wrapper.state('myAnimalsList')).toEqual([myAnimal])
   })
 
-  it('should test if button adds animal to myanimallist if empty string', ()=>{
+  it('should not add animal if animal is empty string', ()=>{
     const wrapper =  shallow(<List />);
     wrapper.state('myAnimalsList');
     let input = wrapper.find('input').at(0);
