@@ -19,9 +19,30 @@ import List from '../components/List.js';
 // instance()				returnerar React-komponenten
 
 
-describe('list renders without crashing', ()=>{
-  //TEST CASES
-  it('should render without crashing', ()=>{
+//Testa att den renderar korrekt.
+//Testa lägga till och ta bort
+//Testa att state uppdaterar
+
+
+
+describe('list renders without crashing', () => {
+
+
+  it('should render without crashing', () => {
     const wrapper = shallow(<List />);
   })
+
+  it('should render heading Animal List', () => {
+  	const wrapper = shallow(<List />);
+  	const myListName = <h1>Animal List</h1>;
+  	expect(wrapper.contains(myListName)).toBe(true);
+  });
+
+  it('should render add animal button', () => {
+    const wrapper = shallow(<List />);
+    expect(wrapper.find('button').length).toBe(1)
+  });
+
+
+
 })

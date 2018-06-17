@@ -26,3 +26,53 @@ body {
 .App-intro {
   font-size: large;
 }
+
+
+.container {
+  width: 500px;
+  margin: 200px auto;
+}
+
+.listcontainer {
+  width: 500px;
+}
+
+.button {
+  width: 200px;
+  background-color: #4bbb8b;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: 'Calibri';
+}
+
+.input {
+  width: 200px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4;
+  box-sizing: border-box;
+}
+
+.list {
+  list-style: none;
+}
+
+.removebutton {
+  width: 100;
+  background-color: #ce2525;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 10px;
+  border: none;
+  border-radius: 4;
+  cursor: pointer;
+  letter-spacing: 1;
+  font-family: 'Calibri';
+}
