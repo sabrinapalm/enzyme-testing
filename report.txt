@@ -17,6 +17,6 @@ Att värden som ska förändras, läggas till eller tas bort faktiskt gör det.
 
 
 Finns det några onödiga testfall i deras kod? Varför är de onödiga?
-I denna laboration kan jag tycka att värden som null, undefined, Infinity och liknande inte behöver testat.
-Jag kan säkert ha fel i detta, jag har själv inte testat. Men som användare av en applikation hade jag förmodligen
+I denna laboration kan jag tycka att värden som null, undefined, Infinity och liknande inte behöver testas.
+Jag kan säkert ha fel i detta, jag har själv inte testat dessa inputvärden. Men som användare av en applikation hade jag förmodligen
 inte försökt att lägga in dessa värden om man inte är en riktigt Hackerman så att säga.
